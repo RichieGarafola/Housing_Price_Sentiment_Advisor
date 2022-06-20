@@ -4,8 +4,8 @@
 Housing Price Sentiment Advisor. Our tool will analyze 15 and 30 year fixed mortgage rates from FRED economic database and look for correlations with Case Shiller housing prices. The fixed mortgage rates will act as indicators to help us understand the future outlook of the housing market. The economic sentiment will be gauged using NLP. This tool will assess the correlations and judge if it is the right time to look for houses based on our predictions.
 
 **Final Product:**
-*Dashboard*
-*Housing Price Sentiment Advisor (Lex)*
+- *Dashboard*
+- *Housing Price Sentiment Advisor (Lex)*
 
 - Our advisor will parse through our dictionary and answer the future outlook of each states housing prices 
 
