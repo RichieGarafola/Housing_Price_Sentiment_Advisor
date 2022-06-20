@@ -7,7 +7,7 @@ Housing Price Sentiment Advisor. Our tool will analyze 15 and 30 year fixed mort
 - *Dashboard*
 - *Housing Price Sentiment Advisor (Lex)*
 
-- Our advisor will parse through our dictionary and answer the future outlook of each states housing prices 
+Our advisor will parse through our dictionary and answer the future outlook of each states housing prices 
 
 
 **How will our tool forecast housing prices?**
