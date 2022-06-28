@@ -42,8 +42,8 @@ There are only 2 states Illinois and Georiga that are Lower then the **US Nation
 
 # Appendix
 
-    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/NONbiased_ny_prophet_prediction.PNG)
-    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/all_states_index.PNG)
+![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/NONbiased_ny_prophet_prediction.PNG)
+![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/all_states_index.PNG)
     ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__ada.PNG)
     ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__ada_classification_report.PNG)
     ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__decision_tree.PNG)
@@ -87,5 +87,8 @@ There are only 2 states Illinois and Georiga that are Lower then the **US Nation
     ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/sklearn.PNG)
     ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/stock_houses.JPG)
     ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/usa_index_forecast.PNG)
+    
+    ----------------
+    
     
     
