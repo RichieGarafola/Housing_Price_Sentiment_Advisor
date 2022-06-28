@@ -36,3 +36,56 @@ Based on our findings using the ***Non-Biased (not ffill) Data Points*** we for 
 Our findings were based on the ***Non-Biased (not ffill) Data Points***. First we did not understand why we got this, this point we had figured it was due to insufficent data points. This is where we used the _ffill_ to get more data point but with the increase of data points we had a more _biased_ data set. With the new dataset we had a total opposite outcome.
 **Mortage Rates** along with the ___Housing Prices___ have an inverse correlation as shown in the **NonBiased** data set. When __Mortgage Rates__ are high we can see that Housing prices are lower.
 There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark. Overall we group 2 see that there is going to be a correction this upcoming ***March of 2023*** 
+
+
+
+
+# Appendix
+
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/NONbiased_ny_prophet_prediction.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/all_states_index.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__ada.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__ada_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__decision_tree.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__lr_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_mortgage15_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_mortgage30_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_ny_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_ny_prophet_prediction.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_passive_aggressive_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_passive_aggressive_train_test_scores.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_usa_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_usa_prophet_prediction.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/ca_vs_us_index.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/data_cleaning.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/fbprophet.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/georgia_vs_us_index.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/housingmarket_mortgagerates_wordcloud.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/keras-tensorflow.jpg)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/linear_sequence_15year.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/linear_sequence_30year.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/logistic_regression_twitter%20sentiment.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/more_expensie_than_us_index.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/naive_bayes_complementNB_twitter%20sentiment.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/naive_bayes_multinominalNB_twitter%20sentiment.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nltk.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/non_biased_passive_aggressive_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/non_biased_passive_aggressive_train_test_scores.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__ada.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__ada_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__decision_tree.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__lr_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_mortgage15_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_mortgage30_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_ny_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_svm.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_svm_classification_report.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_usa_forecast.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/ny_vs_us_index.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/prophet.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/sentiment_analysis_piechart.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/sklearn.png)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/stock_houses.jpg)
+    ![](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/usa_index_forecast.png)
+    
+    
