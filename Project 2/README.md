@@ -8,6 +8,8 @@ Create an investment tool that will allow the user to predict the trends of real
 ## **Our Challenge**
 - The Case-Shiller Home Price Index is delivered on a monthly basis. Although our data originates in 1987, 12 data points a year is not a lot. We decided to use both forward fill to get the monthly data to be “delivered” daily so we have more data points. Also to use the non biased data sets to get the real picture. 
 - Using the ***Non biased*** data gives the Group a more _REAL_ outlook on what is going on in the housing market The Case-Shiller Home Price Index only provided us with about _680 Data Points_. This was considered **low** to us. Using the Foward Fill method to fill in data in between the months we get our **biased** data
+Biased : https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/Project_2_Housing_price_sentiment_Advisor(Biased).ipynb
+Non Biased : https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/Project_2_Housing_price_sentiment_Advisor(Original).ipynb
 
 # Group Questions
 1. Is there a correlation with mortgage rates and housing prices?
@@ -38,7 +40,8 @@ Our findings were based on the ***Non-Biased (not ffill) Data Points***. First w
 There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark. Overall we group 2 see that there is going to be a correction this upcoming ***March of 2023*** 
 
 
-
+## A link to the Dashboard can be found below:
+https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/streamlit_dashboard.py
 
 # Appendix
 ![alt=""](images/NONbiased_ny_prophet_prediction.PNG)
