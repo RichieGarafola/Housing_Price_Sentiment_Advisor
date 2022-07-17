@@ -27,6 +27,30 @@ Non Biased : https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_
 - we gathered data through an API using _Pandas DataReader_ with the data from **FRED** or _Federal Reserve Econommic Data_. This is where we find the *Case-Shiller* monthly index. At this point we decided to use the _ffill()_ method to see if the increse in data points were needed for an outcome. 
 - cleaned the Data by the normal process (ie. dropping na, removing null, column manipulation, etc.) then splitting up the data for testing and training.
 
+---
+
+## Sentiment Analysis
+![alt="housingmarket_mortgagerates_wordcloud"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/housingmarket_mortgagerates_wordcloud.png?raw=true)
+
+Our sentiment analysis tool scrapes twitter based on keywords, amount of tweets to be analyzed and amount of days back to scrape
+Based on these tweets, we use regex to clean the tweets and sentiment intensity analyzer to analyze the tweets and give us a polarity score for each tweet. 
+Using the sentiment from the intensity analyser we categorized our negative and positive tweets and ran several machine learning models. 
+Results vary according to each search. On Average, according to our test accuracy scores, our model predicts around 60%.
+
+In this wordcloud example we used Housing Market and Mortgage Rates as our search words, 1000 tweets in the last year (365 days). We can see interest rates, housing and inflation as some of the bigger words besides the search words. Some words that stand out to us here are demand, increase, rising, high.. Interestingly a few months populate in the graph (march, may, april) 
+
+![alt="sentiment_analysis_piechart"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/sentiment_analysis_piechart.png?raw=true)
+
+Based on our findings, we can see that there is 49% positive sentiment as it relates to the housing market and mortgage rates tweets on twitter while there is a 39% negative sentiment in tweets going around in the last year. 
+
+![alt="naive_bayes_complementNB_twitter_sentiment"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/naive_bayes_complementNB_twitter%20sentiment.png?raw=true)
+![alt="naive_bayes_multinominalNB_twitter_sentiment"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/naive_bayes_multinominalNB_twitter%20sentiment.png?raw=true)
+![alt="logistic_regression_twitter_sentiment"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/logistic_regression_twitter%20sentiment.png?raw=true)
+
+The three models we used on the sentiment are 1 logistic regression model and 2 naive bayes models, one being complement naive bayes the other multinomnal naive bayes. 
+The compliment naive bayes model is the most balanced as it is able to predict both negative and positive tweets unlike the other 2 models. Although we do not have a lot of support we are still able to predict the sentiment with a 60% accuracy on average.
+
+---
 ## Data Analysis
 
 - We took the cleaned data and split data to get started for **Natural Language Processing** 
@@ -38,10 +62,14 @@ Non Biased : https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_
 - Lastly for our _Data Analytics_ we used **Facebook Prophet** for Machine Learning on Index and Mortgage rates: SVM, ADABoostClassifier, Decision Tree Classifier, Passive Aggressive Classifier
 
 ## Professional Subjective Opinion
+
+
+
+
 Based on our findings using the ***Non-Biased (not ffill) Data Points*** we for told about a ***Market Crash*** in the coming **2023 Year**.
 Our findings were based on the ***Non-Biased (not ffill) Data Points***. First we did not understand why we got this, this point we had figured it was due to insufficent data points. This is where we used the _ffill_ to get more data point but with the increase of data points we had a more _biased_ data set. With the new dataset we had a total opposite outcome.
 **Mortage Rates** along with the ___Housing Prices___ have an inverse correlation as shown in the **NonBiased** data set. When __Mortgage Rates__ are high we can see that Housing prices are lower.
-There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark. Overall we group 2 see that there is going to be a correction this upcoming ***March of 2023*** 
+There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark.
 
 A more detailed synopsis of our findings can be found in the provided slide deck:
 https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/Project%202%20Housing%20Price.pdf
