@@ -58,15 +58,50 @@ This is where things got interesting for us. Our data tells 2 very different sto
 
 ![alt="biased_ny_forecast"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_ny_forecast.png?raw=true)
 
-
-![alt="biased_ny_prophet_prediction"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_ny_prophet_prediction.png?raw=true)
-
 ![alt="nonbiased_ny_forecast"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_ny_forecast.png?raw=true)
 
+Initially we did not understand the significant decline in the housing prices we figured it was due to insufficient data points. We decided to increase amount of data points used by carrying the data delivered on the first of the month to be delivered daily until the beginning of the following month. After doing this we found our data was too biased and therefore giving us a total opposite outcome from the original data. 
+
+---
+
+## Machine Learning Outcomes
+
+We wanted to see if we can predict the future price of the state housing price index using the average of the last 5 and 13 datapoints as our signal. 
+ 
+Precision is the ability of a classifier not to label an instance positive that is actually negative. It is the ratio of True Positives to the sum of true and false positives — [ TP / (TP + FP ) ] ----
+
+Recall is the ability of a classifier to find all positive instances. It is the ratio of True Positives to the sum of True positives and False Negatives. –[ TP / (TP + FN) ]--
+
+The F1 score is a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0. Generally speaking, F1 scores are lower than accuracy measures as they embed precision and recall into their computation.
+
+### AdaBoost Classifier
+Using the AdaBoost classifier we had a very high precision and recall score predicting higher pricing. However it has a 0 overall score predicting negative occurrences. 
+Our non biased passive aggressive classification report did not have a lot of support. With an average score of .64 for positive occurrences and .11 for negative occurrences we were not confident with this outcome.
+
+![alt="biased__ada"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__ada.png?raw=true)
+![alt="biased__ada_classification_report"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__ada_classification_report.png?raw=true)
+![alt="nonbiased__ada"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__ada.png?raw=true)
+![alt="nonbiased__ada_classification_report"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__ada_classification_report.png?raw=true)
+
+### Decision Tree
+
+we had a very high precision and recall score using the Decision Tree classification report as it relates to predicting higher pricing. However it has a 0 overall score predicting negative occurrences. 
+
+![alt="nonbiased__decision_tree"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased__decision_tree.png?raw=true)
+![alt="biased__decision_tree"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased__decision_tree.png?raw=true)
+
+### Passive Aggressive 
+We had a very high precision and recall score using the Biased Passive aggressive classification report as it relates to predicting higher pricing. However it has a 0 overall score predicting negative occurrences. Our non biased passive aggressive classification report did not have a lot of support but overall performed pretty well. 
 
 
+![alt="non_biased_passive_aggressive_classification_report"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/non_biased_passive_aggressive_classification_report.png?raw=true)
+![alt="non_biased_passive_aggressive_train_test_scores"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/non_biased_passive_aggressive_train_test_scores.png?raw=true)
+![alt="biased_passive_aggressive_classification"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_passive_aggressive_classification_report.png?raw=true)
+![alt="biased_passive_aggressive_train_test_scores"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_passive_aggressive_train_test_scores.png?raw=true)
 
-## Data Analysis
+---
+
+## Data Analysis in summary
 
 - We took the cleaned data and split data to get started for **Natural Language Processing** 
   - NLP we used a few different methods here **WordCloud, Vader Sentiment Intensity Analyzer, PorterStemmer/ Lemmatizer**
@@ -78,12 +113,10 @@ This is where things got interesting for us. Our data tells 2 very different sto
 
 ## Professional Subjective Opinion
 
+Based on our findings using the ***Non-Biased (not ffill) Data Points*** our data concludes ***Market Correction*** in the coming **2023 Year**.
 
+**Mortage Rates** and **Housing prices** generally have an inverse correlation as shown in the **NonBiased** data set. When **Mortgage Rates** are high we can see that Housing prices are typically reduced.
 
-
-Based on our findings using the ***Non-Biased (not ffill) Data Points*** we for told about a ***Market Crash*** in the coming **2023 Year**.
-Our findings were based on the ***Non-Biased (not ffill) Data Points***. First we did not understand why we got this, this point we had figured it was due to insufficent data points. This is where we used the _ffill_ to get more data point but with the increase of data points we had a more _biased_ data set. With the new dataset we had a total opposite outcome.
-**Mortage Rates** along with the ___Housing Prices___ have an inverse correlation as shown in the **NonBiased** data set. When __Mortgage Rates__ are high we can see that Housing prices are lower.
 There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark.
 
 A more detailed synopsis of our findings can be found in the provided slide deck:
