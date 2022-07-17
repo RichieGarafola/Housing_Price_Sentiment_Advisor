@@ -41,10 +41,10 @@ There are only 2 states Illinois and Georiga that are Lower then the **US Nation
 
 
 # Appendix
-![alt=""](images/NONbiased_ny_prophet_prediction.PNG)
-![alt=""](images/all_states_index.PNG)
-![alt=""](images/biased__ada.PNG)
-![alt=""](images/biased__ada_classification_report.PNG)
+![alt text](images/NONbiased_ny_prophet_prediction.PNG)
+![alt text](images/all_states_index.PNG)
+![alt text](images/biased__ada.PNG)
+![alt text](images/biased__ada_classification_report.PNG)
 ![alt=""](images/biased__decision_tree.PNG)
 ![alt=""](images/biased__lr_classification_report.PNG)
 ![alt=""](images/biased_mortgage15_forecast.PNG)
