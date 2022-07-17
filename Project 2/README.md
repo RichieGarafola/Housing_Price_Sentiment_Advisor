@@ -6,9 +6,8 @@ _________
 Create an investment tool that will allow the user to predict the trends of real estate by analyzing the increase in housing prices as it relates to the mortgage rates. The tool will analyze historical mortgage rates and look for confluence and divergence between the housing prices and mortgage rates. Using the 30yr and 15yr mortgage rates as an indicator we can predict the future outlook of the housing market. The sentiment will be gauged by using NLP to see if there is a correlation with sentiment on twitter and our predictor. We can use this tool to assess the correlations and judge if it is the right time to look for houses.
 
 ## **Our Challenge**
-- The Case-Shiller Home Price Index is delivered on a monthly basis. Although our data originates in 1987, 12 data points a year is not a lot. We decided to use both forward fill to get the monthly data to be “delivered” daily so we have more data points. Also to use the non biased data sets to get the real picture. 
-- Using the ***Non biased*** data gives the Group a more _REAL_ outlook on what is going on in the housing market The Case-Shiller Home Price Index only provided us with about _680 Data Points_. This was considered **low** to us. Using the Foward Fill method to fill in data in between the months we get our **biased** data
-
+The Case-Shiller Home Price Index is delivered on a monthly basis. Although our data originates in 1987, 12 data points a year is not a lot. We decided to do 2 variations of our study. First we will **modify** our data by using a forward fill method which assigns the data that was delivered at the beginning of the month to fill all days in the month until the next delivery the following month. This will give us approximately 30x more data than the original dataset. 
+Next we will use the **original** dataset as we ultimately want to be as unbiased as possible although it has less data points, it is true to delivery. This will give us the real picture. 
 
 Biased : https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/Project_2_Housing_price_sentiment_Advisor(Biased).ipynb
 
@@ -24,8 +23,8 @@ Non Biased : https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_
 
 ## Data Cleaning Process 
 
-- we gathered data through an API using _Pandas DataReader_ with the data from **FRED** or _Federal Reserve Econommic Data_. This is where we find the *Case-Shiller* monthly index. At this point we decided to use the _ffill()_ method to see if the increse in data points were needed for an outcome. 
-- cleaned the Data by the normal process (ie. dropping na, removing null, column manipulation, etc.) then splitting up the data for testing and training.
+- Data was gathered using an API from **Pandas DataReader** being pulled from **FRED** or _Federal Reserve Econommic Data_. 
+- Cleaned the Data by dropping na, removing null, we restructured our data using various column manipulation techniques.
 
 ---
 
@@ -51,6 +50,22 @@ The three models we used on the sentiment are 1 logistic regression model and 2 
 The compliment naive bayes model is the most balanced as it is able to predict both negative and positive tweets unlike the other 2 models. Although we do not have a lot of support we are still able to predict the sentiment with a 60% accuracy on average.
 
 ---
+
+## Prophet
+Using Prophet, we ran a dynamic time series study to analyze all Case Shiller Indices and the 15 and 30 year fixed mortgage rate trends. 
+
+This is where things got interesting for us. Our data tells 2 very different stories. When we forward filled our data we do not see any softening in the near future just a smooth climb. There is a slight dip in the upper and lower yhats but doesnt seem any larger than anything we have seen in recent months, December. Looking at the non biased case shiller housing price index we can see fluctuations in housing prices which make more sense as the prices do in fact rise and drop. However, these fluctuations are relatively consistent ranging around 5000 or so, despite the approximate 15k climb in march of 2022.  Looking at the right side of the chart forecasting the future we can see a significant rally in the coming march by approximately 45k which is 3x the size of the previous march. Although our view is limited, the correction after marches spike seems significantly larger than the previous years pullback, indicating to us we may see a housing market crash in the coming March of 2023.
+
+![alt="biased_ny_forecast"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_ny_forecast.png?raw=true)
+
+
+![alt="biased_ny_prophet_prediction"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/biased_ny_prophet_prediction.png?raw=true)
+
+![alt="nonbiased_ny_forecast"](https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/images/nonbiased_ny_forecast.png?raw=true)
+
+
+
+
 ## Data Analysis
 
 - We took the cleaned data and split data to get started for **Natural Language Processing** 
