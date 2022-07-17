@@ -43,6 +43,8 @@ Our findings were based on the ***Non-Biased (not ffill) Data Points***. First w
 **Mortage Rates** along with the ___Housing Prices___ have an inverse correlation as shown in the **NonBiased** data set. When __Mortgage Rates__ are high we can see that Housing prices are lower.
 There are only 2 states Illinois and Georiga that are Lower then the **US National Benchmark**, While only having data for select states we see that the other 10 states in our **nonbiased** dataset are higher then the US Benchmark. Overall we group 2 see that there is going to be a correction this upcoming ***March of 2023*** 
 
+A more detailed synopsis of our findings can be found in the provided slide deck:
+https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/Project%202%20Housing%20Price.pdf
 
 ## A link to the Dashboard can be found below:
 https://github.com/RichieGarafola/Project2_Housing_Price_Sentiment_Advisor/blob/main/Project%202/streamlit_dashboard.py
